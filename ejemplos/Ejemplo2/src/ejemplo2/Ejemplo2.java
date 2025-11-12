@@ -1,4 +1,4 @@
-/*
+    /*
  * Realizar un programa en java que permita determinar
  * si un estudiante ha pasado el ciclo
  * se ingresa el promedio del estudiante
@@ -32,10 +32,22 @@ public class Ejemplo2 {
         miNombre = entrada.nextLine();
         System.out.println("Ingrese el promedio por favor");
         promedio = entrada.nextDouble();
+        int edad;
+        String ciudad;
+        System.out.println("Ingrese su edad por favor");
+        edad = entrada.nextInt();
+        entrada.nextLine();
+        System.out.println("Ingrese su ciudad por favor");
+        ciudad = entrada.nextLine();    
+        
+        System.out.println("------------------");
 
         if (promedio >= 7.5) {
-            System.out.printf("Estudiante %s aprobado con un promedio: %.2f\n", 
-                    miNombre, promedio);
+            System.out.printf("Estudiante: %s\n"
+                    + "Edad: %s\n"
+                    + "Ciudad: %s\n"
+                    + "Aprobado con un promedio: %.2f\n", 
+                    miNombre, edad, ciudad, promedio);
         }else{
             System.out.printf("Estudiante reprobado con un "
                     + "promedio: %.2f\n", promedio);
