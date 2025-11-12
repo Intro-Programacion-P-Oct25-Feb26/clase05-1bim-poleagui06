@@ -23,7 +23,8 @@ public class Ejemplo5 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
-
+        
+        // con este if solo damos acceso a los q son de loja
         if (!ciudad.equals("Loja")) {
             System.out.printf("%s\n", "acceso correcto");
         } else {
@@ -31,7 +32,7 @@ public class Ejemplo5 {
         }
 
         int numero = 10;
-
+        // estamos creando una variable  tipo entera para q sea indiferente a 10
         if (numero != 10) {
             System.out.println("correcto");
         }
