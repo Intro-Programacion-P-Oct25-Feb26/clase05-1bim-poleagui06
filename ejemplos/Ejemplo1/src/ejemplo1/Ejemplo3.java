@@ -15,20 +15,17 @@ import java.util.Locale;
  *
  * @author reroes
  */
-public class Ejemplo1 {
+public class Ejemplo3 {
 
     public static void main(String[] args) {
         // Condicionales simplesmain
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        double limiteNotas = 6.9;
-        /*
-        double promedio = 7.5;
-        System.out.println("Ingrese un valor para anlizar");
-        double promedio = entrada.nextDouble();
-        
-        */
+        // Ingresar por teclado el limite de notas
+        double limiteNotas;
+        System.out.println("Ingrese el limite de notas");
+        limiteNotas = entrada.nextDouble();
         
         System.out.println("Ingrese un valor para anlizar");
         double promedio = entrada.nextDouble();
