@@ -40,6 +40,7 @@ public class Ejemplo6 {
         usuario = entrada.nextLine();
         System.out.println("Ingrese su edad");
         edad = entrada.nextInt();
+        entrada.nextLine();
         System.out.println("Ingrese su parroquia");
         parroquia = entrada.nextLine();
         System.out.println("Ingrese su dia de Pago");
@@ -49,13 +50,45 @@ public class Ejemplo6 {
                 (diaPago < 10)) {
             valorDes = costoFijo * descuento;
             total= costoFijo - valorDes;
-            System.out.printf("%s\n", "acceso correcto");
+            System.out.printf("---Gym Fuerza Total---\n"
+                    + "Recibo mensual:\n"
+                    + "Nombre: %s %s\n"
+                    + "Usiario: %s\n"
+                    + "Edad: %s\n"
+                    + "Parroquia: %s\n"
+                    + "Dia de Pago: %s\n"
+                    + "Subtotal: %.2f\n"
+                    + "Descuento: %.2f\n"
+                    + "Total a Pagar: %.2f\n", 
+                    nombre,
+                    apellido,
+                    usuario,
+                    edad,
+                    parroquia,
+                    diaPago,
+                    costoFijo,
+                    valorDes,
+                    total);
         } else {
-            System.out.printf("%s\n", "acceso incorrecto");
+            System.out.printf("---Gym Fuerza Total---\n"
+                    + "Recibo mensual:\n"
+                    + "Nombre: %s %s\n"
+                    + "Usiario: %s\n"
+                    + "Edad: %s\n"
+                    + "Parroquia: %s\n"
+                    + "Dia de Pago: %s\n"
+                    + "Subtotal: %.2f\n"
+                    + "Descuento: $ 0,00\n"
+                    + "Total a Pagar: %.2f\n", 
+                    nombre,
+                    apellido,
+                    usuario,
+                    edad,
+                    parroquia,
+                    diaPago,
+                    costoFijo,
+                    costoFijo);
         }
-
-        System.out.println("Ingrese la parroquia");
-        parroquia = entrada.nextLine(); // Quito
 
     }
 
